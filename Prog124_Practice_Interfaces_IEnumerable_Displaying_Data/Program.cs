@@ -1,36 +1,32 @@
 ﻿using Prog124_Practice_Interfaces_IEnumerable_Displaying_Data;
 
-static void Main(string[] args)
-{
-    SchoolClass myClass = new SchoolClass("Mathematics");
+    SchoolClass Prog124 = new SchoolClass("Programming");
 
     // Add students to the class roster
-    myClass.AddStudent(new Student("Jonathan"));
-    myClass.AddStudent(new Student("Emily"));
-    myClass.AddStudent(new Student("Michael"));
-    myClass.AddStudent(new Student("Sophia"));
-    myClass.AddStudent(new Student("William"));
-    myClass.AddStudent(new Student("Olivia"));
-    myClass.AddStudent(new Student("James"));
-    myClass.AddStudent(new Student("Ava"));
-    myClass.AddStudent(new Student("Benjamin"));
-    myClass.AddStudent(new Student("Isabella"));
-    myClass.AddStudent(new Student("Daniel"));
-    myClass.AddStudent(new Student("Mia"));
-    myClass.AddStudent(new Student("Matthew"));
-    myClass.AddStudent(new Student("Charlotte"));
-    myClass.AddStudent(new Student("David"));
-    myClass.AddStudent(new Student("Abigail"));
-    myClass.AddStudent(new Student("Joseph"));
-    myClass.AddStudent(new Student("Harper"));
-    myClass.AddStudent(new Student("Andrew"));
-    myClass.AddStudent(new Student("Ella"));
+    Prog124.AddStudent(new Student("Jonathan"));
+    Prog124.AddStudent(new Student("Emily"));
+    Prog124.AddStudent(new Student("Michael"));
+    Prog124.AddStudent(new Student("Sophia"));
+    Prog124.AddStudent(new Student("William"));
+    Prog124.AddStudent(new Student("Olivia"));
+    Prog124.AddStudent(new Student("James"));
+    Prog124.AddStudent(new Student("Ava"));
+    Prog124.AddStudent(new Student("Benjamin"));
+    Prog124.AddStudent(new Student("Isabella"));
+    Prog124.AddStudent(new Student("Daniel"));
+    Prog124.AddStudent(new Student("Mia"));
+    Prog124.AddStudent(new Student("Matthew"));
+    Prog124.AddStudent(new Student("Charlotte"));
+    Prog124.AddStudent(new Student("David"));
+    Prog124.AddStudent(new Student("Abigail"));
+    Prog124.AddStudent(new Student("Joseph"));
+    Prog124.AddStudent(new Student("Harper"));
+    Prog124.AddStudent(new Student("Andrew"));
+    Prog124.AddStudent(new Student("Ella"));
 
-    
-    Console.WriteLine($"Class Name: {myClass.ClassName}");
+    Console.WriteLine($"Class Name: {Prog124.ClassName}");
     Console.WriteLine("Roster:");
-    foreach (var student in myClass.Roster)
+    foreach (var student in Prog124)
     {
         Console.WriteLine(student.ToString());
     }
-}
